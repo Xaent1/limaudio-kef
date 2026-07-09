@@ -21,6 +21,7 @@ import vinyl from "./assets/products/vinyl.jpg";
 import ls50w2shelf from "./assets/products/ls50w2-shelf.jpg";
 import shelfLife from "./assets/products/ls50meta-life.jpg";
 import listening from "./assets/products/listening.jpg";
+import mediaroom from "./assets/products/mediaroom.jpg";
 
 const scrollToContact = () =>
   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
@@ -41,14 +42,15 @@ function Hero() {
         </Reveal>
         <Reveal delay={80}>
           <h1 className="mt-6 max-w-3xl font-heading text-4xl font-semibold leading-[1.06] text-brand-white sm:text-5xl lg:text-6xl">
-            KEF. Звук, который раскрывается в вашем пространстве.
+            KEF раскрывается только в правильно подготовленной комнате.
           </h1>
         </Reveal>
         <Reveal delay={160}>
           <p className="mt-6 max-w-xl font-body text-lg text-brand-gray">
-            Официальный дилер KEF. Подбираем и настраиваем британскую акустику под
-            вашу комнату, интерьер и музыку — и остаёмся рядом на всё время, пока
-            система живёт у вас дома.
+            Покупка акустики — лишь половина результата. Без расчёта помещения,
+            точного размещения и настройки даже флагманский KEF звучит вполсилы.
+            Официальный дилер LIMAUDIO рассчитывает комнату, собирает и настраивает
+            систему под ключ — и остаётся рядом на всё время, пока она живёт у вас дома.
           </p>
         </Reveal>
         <Reveal delay={240}>
@@ -407,7 +409,7 @@ function Showroom() {
       <div className="container-x grid gap-14 lg:grid-cols-2 lg:items-center">
         <Reveal>
           <div className="overflow-hidden rounded-3xl border border-brand-pattern">
-            <img src={showroom} alt="Зона прослушивания в шоуруме LIMAUDIO" className="h-full w-full object-cover" loading="lazy" />
+            <img src={mediaroom} alt="Медиарум с акустикой в проекте LIMAUDIO" className="h-full w-full object-cover" loading="lazy" />
           </div>
         </Reveal>
         <div>

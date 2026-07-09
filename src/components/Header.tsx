@@ -4,7 +4,6 @@ import Icon from "./Icon";
 
 const links = [
   { href: "#why", label: "Почему KEF" },
-  { href: "#uniq", label: "Uni-Q" },
   { href: "#room", label: "Помещение" },
   { href: "#formats", label: "Форматы" },
   { href: "#showroom", label: "Шоурум" },
@@ -43,22 +42,22 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 font-body text-sm text-brand-gray xl:flex">
+        <nav className="hidden items-center gap-6 font-body text-sm text-brand-gray xl:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="transition hover:text-brand-white">
+            <a key={l.href} href={l.href} className="whitespace-nowrap transition hover:text-brand-white">
               {l.label}
             </a>
           ))}
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <a href={PHONE_HREF} className="flex items-center gap-2 font-body text-sm text-brand-white transition hover:text-brand-gray">
-            <Icon name="phone" className="h-4 w-4" />
+          <a href={PHONE_HREF} className="flex items-center gap-2 whitespace-nowrap font-body text-sm text-brand-white transition hover:text-brand-gray">
+            <Icon name="phone" className="h-4 w-4 shrink-0" />
             {PHONE}
           </a>
           <a
             href="#contact"
-            className="rounded-lg bg-brand-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-[0.16em] text-brand-black transition hover:bg-brand-gray"
+            className="whitespace-nowrap rounded-lg bg-brand-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-[0.16em] text-brand-black transition hover:bg-brand-gray"
           >
             Подобрать акустику KEF
           </a>
